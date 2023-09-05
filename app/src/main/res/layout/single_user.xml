@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bordertext"
+    android:id="@+id/mainlyt"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:id="@+id/firstnamelyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First Name : "
+            android:textColor="@color/white"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/firstname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="18dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/middlenamelyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:layout_below="@+id/firstnamelyt"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Middle Name : "
+            android:textColor="@color/white"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/middlename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="18dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lastnamelyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/middlenamelyt"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Name : "
+            android:textColor="@color/white"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/lastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="18dp"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
